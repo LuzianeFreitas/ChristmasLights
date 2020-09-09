@@ -66,6 +66,30 @@ body {
     animation: color-7 1s infinite;
 }
 
+.button-groups {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-groups button {
+    height: 60px;
+    width: 60px;
+    background-color: #ACE6DF;
+    border: none;
+    border-radius: 20%;
+    transition: 0.7s;
+}
+
+#turn-off {
+    margin-left: 1rem;
+}
+
+.button-groups button:hover {
+    background-color:#BEFFF7;
+}
+
 @keyframes color-1 {
     0%,
     100% {
@@ -79,10 +103,10 @@ body {
 @keyframes color-2 {
     0%,
     100% {
-        box-shadow: 0 0 20px 5px #BA0900;
+        box-shadow: none;
     }
     50% {
-        box-shadow: none;
+        box-shadow: 0 0 20px 5px #BA0900;
     }
 }
 
@@ -99,10 +123,10 @@ body {
 @keyframes color-4 {
     0%,
     100% {
-        box-shadow: 0 0 20px 5px #14DB60;
+        box-shadow: none;
     }
     50% {
-        box-shadow: none;
+        box-shadow: 0 0 20px 5px #14DB60;
     }
 }
 
@@ -120,10 +144,10 @@ body {
 @keyframes color-6 {
     0%,
     100% {
-        box-shadow: 0 0 20px 5px #DB1DBF;
+        box-shadow: none;
     }
     50% {
-        box-shadow: none;
+        box-shadow: 0 0 20px 5px #DB1DBF;
     }
 }
 
@@ -137,5 +161,6 @@ body {
         box-shadow: none;
     }
 }
+
 
 
