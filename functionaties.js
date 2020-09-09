@@ -15,7 +15,7 @@ const on = function() {
 const off = function() {  
     for (var i = 0; i < tam; i++) {
         lights[i].style.animation = "none";
-        lights[i].style.background = "#62396E";
+        lights[i].style.background = "#67566E";
     }
 }
 

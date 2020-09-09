@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -30,6 +32,40 @@ body {
     position: relative;
     transition: 1s all ease;
 }
+/* Elemento para decoração */
+.lights:before {
+    position: absolute;
+    content: '';
+    height: 15px;
+    width: 15px;
+    left: 17.5px;
+    top: -15px;
+    margin: 0;
+    padding: 0;
+    display: block;
+    background: #524457;
+    border-radius: 2px;
+    display: inline-block;
+    border-bottom: 2px solid rgb(97, 81, 107);
+}
+  
+.lights:after {
+    position: absolute;
+    content: "";
+    top: -20px;
+    left: 30px;
+    position: absolute;
+    width: 70px;
+    height: 18.6666666667px;
+    border-bottom: solid rgb(209, 209, 209) 2px;
+    border-radius: 50%;
+}
+
+.circle:last-child::after {
+    content: '';
+    position: absolute;
+    border: none;
+  }
 
 .blue {
     background-color: #1C00A8;
@@ -150,7 +186,6 @@ body {
         box-shadow: 0 0 20px 5px #DB1DBF;
     }
 }
-
 
 @keyframes color-7 {
     0%,
