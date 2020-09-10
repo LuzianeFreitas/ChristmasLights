@@ -1,25 +1,32 @@
-* {
+*,
+body {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    /* background-color: #000000; */
 }
 
-body {
+/* body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
     overflow: hidden;
     background-color: #000000;
+}*/
+
+#container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #000000;
 }
 
-.container-lights {
-    border-radius: 25px;
-    height: 20vh;
-    width: 100vw;
+#container .container-lights {
+    height: 10rem;
+    width: 50rem;
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin: 0 auto;
 }
 
 .lights {
@@ -38,7 +45,7 @@ body {
     content: '';
     height: 15px;
     width: 15px;
-    left: 17.5px;
+    left: 35px;
     top: -15px;
     margin: 0;
     padding: 0;
@@ -48,14 +55,14 @@ body {
     display: inline-block;
     border-bottom: 2px solid rgb(97, 81, 107);
 }
-  
+/* Elemento para decoração */
 .lights:after {
     position: absolute;
     content: "";
     top: -20px;
-    left: 30px;
+    left: 50px;
     position: absolute;
-    width: 70px;
+    width: 100px;
     height: 18.6666666667px;
     border-bottom: solid rgb(209, 209, 209) 2px;
     border-radius: 50%;
@@ -65,7 +72,7 @@ body {
     content: '';
     position: absolute;
     border: none;
-  }
+}
 
 .blue {
     background-color: #1C00A8;
@@ -197,5 +204,10 @@ body {
     }
 }
 
-
+/* @media (min-width: 1200px){
+    body {
+        max-height: 100vh;
+    }
+    
+} */
 
