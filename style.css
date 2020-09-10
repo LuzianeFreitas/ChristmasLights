@@ -1,7 +1,8 @@
 *,
 body {
     box-sizing: border-box;
-    /* background-color: #000000; */
+    background-color: #000000;
+
 }
 
 /* body {
@@ -17,8 +18,8 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    overflow: hidden;
     background-color: #000000;
+    overflow: hidden !important;
 }
 
 #container .container-lights {
@@ -109,28 +110,53 @@ body {
     animation: color-7 1s infinite;
 }
 
-.button-groups {
-    margin-top: 3rem;
+.container-actions {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 1rem;
+}
+
+.button-groups button,
+.intensity input {
+    background: none;
+    outline: none;
+    color: white;
+    border: 2px solid #67566E; 
 }
 
 .button-groups button {
-    height: 60px;
-    width: 60px;
-    background-color: #ACE6DF;
-    border: none;
-    border-radius: 20%;
-    transition: 0.7s;
+    height: 30px;
+    width: 80px;
+    margin-left: 0.3rem;
+    
+}
+.button-groups button#turn-on:hover,
+.button-groups button#turn-off:hover{
+    background-color: #67566E;
 }
 
-#turn-off {
+.intensity input#intensit {
+    height: 30px;
+    width: 80px;
+    text-align: right;
+    background-color: white;
+    color: #67566E;
     margin-left: 1rem;
+    border: 2px solid white;
 }
 
-.button-groups button:hover {
-    background-color:#BEFFF7;
+.intensity input#submit {
+    height: 30px;
+    width: 80px;
+}
+
+.intensity input#submit:hover {
+    background-color: #67566E;
+}
+
+.intensity input#intensit:hover {
+    background-color: #E6E6E6;
 }
 
 @keyframes color-1 {
@@ -253,5 +279,10 @@ body {
     .lights:after {
         left: 20px;
         width: 70px;
+    }
+
+    .button-groups button {
+        height: 40px;
+        width: 40px;
     }
 }
