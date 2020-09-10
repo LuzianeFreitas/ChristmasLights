@@ -17,13 +17,18 @@
             <div class="lights purple"></div>
             <div class="lights orange"></div>
         </div>
+
         <div class="container-actions">
             <div class="button-groups">
                 <button id="turn-on">on</button>
                 <button id="turn-off">off</button>
             </div>
-        </div>
 
+            <div class="intensity">
+                <input type="number" id="intensit" name="intensit" min="1" max="5" value="">
+                <input type="submit" id="submit" name="" value="intensity" onclick="changeIntensity()">
+            </div>
+        </div>
     </div>
     <script src="/functionaties.js"></script>
 </body>
