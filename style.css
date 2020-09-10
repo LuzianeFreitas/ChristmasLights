@@ -204,10 +204,54 @@ body {
     }
 }
 
-/* @media (min-width: 1200px){
-    body {
-        max-height: 100vh;
+@media (max-width: 860px){
+    #container .container-lights {
+        height: 9rem;
+        width: 45rem;
     }
-    
-} */
 
+    .lights:before {
+        left: 30px;
+    }
+    /* Elemento para decoração */
+    .lights:after {
+        left: 40px;
+        width: 95px;
+    }
+}
+
+@media (max-width: 760px) { 
+    /* #container{
+        background-color: #DB1DBF;
+    } */
+
+    #container .container-lights {
+        height: 8rem;
+        width: 40rem;
+    }
+
+    .lights:before {
+        left: 20px;
+    }
+    /* Elemento para decoração */
+    .lights:after {
+        left: 30px;
+        width: 95px;
+    }
+}
+
+@media (max-width: 660px) { 
+    #container .container-lights {
+        height: 6rem;
+        width: 30rem;
+    }
+
+    .lights:before {
+        left: 10px;
+    }
+    /* Elemento para decoração */
+    .lights:after {
+        left: 20px;
+        width: 70px;
+    }
+}
