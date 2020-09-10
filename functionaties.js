@@ -2,6 +2,7 @@ const lights = document.getElementsByClassName('lights');
 const play = document.getElementById('turn-on');
 const stop = document.getElementById('turn-off');
 const but = document.getElementById('submit');
+const title = document.getElementById('title');
 
 var tam = lights.length;
 
@@ -13,7 +14,9 @@ const on = function() {
     }
 }
 
-const off = function() {  
+const off = function() {
+    title.style.animation = "none";
+     
     for (var i = 0; i < tam; i++) {
         lights[i].style.animation = "none";
         lights[i].style.background = "#67566E";
